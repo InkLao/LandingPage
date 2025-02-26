@@ -1,0 +1,20 @@
+
+
+
+
+section h2{
+	color: #006db6;
+
+}
+
+
+.formulario{
+	width: 25%;
+	grid-column: 1 / -1;
+	padding: 40px;
+
+}
+
+.form-floating{
+
+}
