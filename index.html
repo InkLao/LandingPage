@@ -28,6 +28,9 @@
 
       .evento-info .descripcion {
         max-width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
     </style>
 
@@ -45,6 +48,15 @@
       <div class="descripcion">
         <h2>Gran Evento Deportivo 2025</h2>
         <p>¡Desafía tus límites y vive la emoción de la competencia! 💪🔥 Únete a nosotros en un evento cargado de energía, donde la resistencia, la fuerza y la destreza se pondrán a prueba. Compite en maratón, levantamiento de pesas y calistenia, demuestra tu talento y alcanza la gloria. ¿Estás listo para superar tus propios récords? ¡Inscríbete ahora y haz historia! 🏆🚀</p>
+      </div>
+    </section>
+
+    <section class="evento-info">
+      <img src="Imagenes/podio.jpg" alt="Podio">
+      <div class="descripcion">
+        <h2>Premios para el podio</h2>
+        <p>El podio no solo simboliza el triunfo y el esfuerzo, sino que en esta ocasión se llevará un impresionante acumulado de hasta ¡500,000 pesos mexicanos! 🎉
+        Afila tus habilidades, reúne tu determinación y prepárate para dar lo mejor de ti.</p>
       </div>
     </section>
 
@@ -73,6 +85,23 @@
       <p>Prueba tu habilidad en ejercicios de peso corporal.</p>
     </div>
   </div>
+
+  <div class="evento">
+    <img src="Imagenes/Crossfit.jpg" alt="Crossfit">
+    <div class="descripcion">
+      <h3>Crossfit</h3>
+      <p>Entrenamientos dinámicos de alta exigencia donde se exige tu resistencia.</p>
+    </div>
+  </div>
+
+  <div class="evento">
+    <img src="Imagenes/gimnasiaArtistica-removebg-preview.png" alt="Gimnasia Artistica">
+    <div class="descripcion">
+      <h3>Gimnasia Artística</h3>
+      <p>Disciplina deportiva que combina fuerza, flexibilidad, agilidad y coordinación.</p>
+    </div>
+  </div>
+
 </section>
 
 
@@ -94,73 +123,68 @@
     <h2>Registrarse a un evento</h2>
     </section>
 
-  <section class="formulario">
+  <section class="container">
+  <form class="row g-3 needs-validation" novalidate>
 
-    <form>
+    <div class="col-md-4">
+      <label for="nombreCompleto" class="form-label">Nombre Completo</label>
+      <input type="text" class="form-control" id="nombreCompleto" required>
+    </div>
 
+    <div class="col-md-4">
+      <label for="correoElectronico" class="form-label">Correo Electrónico</label>
+      <input type="email" class="form-control" id="correoElectronico" required>
+    </div>
 
-      <div class="form-floating mb-3">
-        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
-        <label for="floatingInput">Nombre Completo</label>
+    <div class="col-md-4">
+      <label for="usuario" class="form-label">Contraseña</label>
+      <div class="input-group">
+        <input type="text" class="form-control" id="usuario" required>
       </div>
-      <div class="form-floating mb-3">
-        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-        <label for="floatingInput">Correo Electronico</label>
-      </div>
+    </div>
 
-      <div class="form-floating">
-        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-        <label for="floatingPassword">Contraseña</label>
-      </div>
-
-
-
-
-      <div class="form-floating">
-      <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-        <option selected>Seleccionar evento</option>
-        <option value="1">Maraton</option>
+    <div class="col-md-6">
+      <label for="evento" class="form-label">Evento</label>
+      <select class="form-select" id="evento" required>
+        <option selected disabled value="">Seleccionar evento</option>
+        <option value="1">Maratón</option>
         <option value="2">Levantamiento de pesas</option>
         <option value="3">Calistenia</option>
       </select>
-      <label for="floatingSelect">Evento</label>
     </div>
 
-
-    <section class="formFecha">
-    <div class="container mt-5">
-        <div class="form-floating">
-            <input type="date" class="form-control" id="fecha" placeholder="yyyy-mm-dd">
-            <label for="fecha">Fecha de Nacimiento</label>
-        </div>
+    <div class="col-md-6">
+      <label for="fechaNacimiento" class="form-label">Fecha de Nacimiento</label>
+      <input type="date" class="form-control" id="fechaNacimiento" required>
     </div>
-    </section>
 
-    <section class="formSexo">
-        <h5> Sexo </h5>
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-          <label class="form-check-label" for="inlineRadio1">Hombre</label>
-        </div>
+    <div class="col-12">
+      <h5>Sexo</h5>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="sexo" id="hombre" value="Hombre">
+        <label class="form-check-label" for="hombre">Hombre</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="sexo" id="mujer" value="Mujer">
+        <label class="form-check-label" for="mujer">Mujer</label>
+      </div>
+    </div>
 
-        <div class="form-check form-check-inline">
-          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-          <label class="form-check-label" for="inlineRadio2">Mujer</label>
-        </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="aceptoTerminos" required>
+        <label class="form-check-label" for="aceptoTerminos">
+          Acepto los <a href="#">términos y condiciones</a>
+        </label>
+      </div>
+    </div>
 
-    </section>
+    <div class="col-12">
+      <button class="btn btn-primary" type="submit">Submit</button>
+    </div>
 
-
-    <section class="condiciones">
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Acepto los <a href="">terminos y condiciones</a></label>
-        </div>
-    </section>
-        <button type="submit" class="btn btn-primary">Submit</button>
-
-    </form>
-  </section>
+  </form>
+</section>
     
   </body>
 </html>
