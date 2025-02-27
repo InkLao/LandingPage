@@ -1,4 +1,60 @@
+    .header-deporte {
+        position: relative;
+        text-align: center;
+    }
 
+    .header-deporte img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .texto-encabezado {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 8vw; 
+        font-weight: bold;
+        color: white;
+        -webkit-text-stroke: 3px black;
+        text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.7);
+}
+
+.evento-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        background-color: #f8f9fa;
+        margin-bottom: 20px;
+      }
+
+
+.evento-info .descripcion {
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+
+      }
+
+
+
+.evento-info img {
+        max-width: 40%;
+        height: auto;
+        border-radius: 10px;
+      }
+
+.evento-info h2 {
+	top: -20px;
+      }      
+
+
+   
 
 
 
@@ -7,8 +63,9 @@
 	display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-top: 20px;
+
 
 }
 
@@ -21,8 +78,15 @@
 	display: flex;
     align-items: center;
     justify-content: center;
-	
 
+	border: 2px solid black;
+
+}
+
+.formulari{
+
+
+  border: 2px solid gray;
 }
 
 .form-control{
@@ -61,6 +125,17 @@
   padding: 20px;
   background-color: #f8f9fa;
   flex-wrap: wrap; /* Para que se acomoden en pantallas pequeñas */
+  border: 2px solid gray;
+}
+
+.eventos h2{
+  color: #006db6;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
 }
 
 .evento {
@@ -73,15 +148,16 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   padding: 15px;
   text-align: center;
+  border: 2px solid gray;
 }
 
 .evento img {
   width: 100%;
-  height: auto;
-  border-radius: 10px;
   height: 250px;
+  border-radius: 10px;
 }
 
 .descripcion {
   margin-top: 10px;
+  text-
 }
