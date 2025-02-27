@@ -40,8 +40,35 @@
   <body>
 
 
+    <header class="header-deporte">
+    <img src="Imagenes/Deportes.jpg" alt="Deporte y Pasión">
+    <div class="texto-encabezado">Deporte y pasión</div>
+</header>
 
-    <h1>Hello, world!</h1>
+<style>
+    .header-deporte {
+        position: relative;
+        text-align: center;
+    }
+
+    .header-deporte img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .texto-encabezado {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 6rem; 
+        font-weight: bold;
+        color: white;
+        -webkit-text-stroke: 3px black;
+        text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.7);
+    }
+</style>
 
 <section class="evento-info">
       <img src="Imagenes/estadio.jpg" alt="Evento deportivo">
