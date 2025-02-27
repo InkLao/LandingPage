@@ -4,17 +4,38 @@
 
 section h2{
 	color: #006db6;
+	margin-bottom: 40px;
 
 }
 
 
 .formulario{
-	width: 25%;
+	width: 35%;
 	grid-column: 1 / -1;
 	padding: 40px;
+	border: 4px solid black;
+	
 
 }
 
-.form-floating{
+.form-control{
+	margin-bottom: 20px;
+
+}
+
+.formFecha{
+	width: 100%;
+	margin-left: -12px;
+	margin-top: -25px;
+}
+
+.formSexo{
+	margin-top: 20px;
+
+}
+
+
+.condiciones{
+	margin-top: 20px;
 
 }
